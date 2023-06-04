@@ -3,7 +3,7 @@ import './JobsTab.scss';
 
 const JobsTab = ({ item, index }) => {
 
-  const { logo, company, contract, tools, languages, role, position, level } = item;
+  const { logo, company, contract, tools, languages, role, position, level, featured, postedAt, location } = item;
   // console.log(logo)
   // console.log(CompanyLogo)
   return (
@@ -12,9 +12,18 @@ const JobsTab = ({ item, index }) => {
         <div className='company-logo-container'>
           <img src={logo} alt="Company Logo" className='company-logo' />
         </div>
-        <div className='company-info'>
-          <p className='company-name'>{company}</p>
+        <div className='job-detail-container'>
+          <div className='company-name-btn-container'>
+            <p className='company-name'>{company}</p>
+            <button className='btn btn-new'>New</button>
+            <button className='btn btn-featured'>Featured</button>
+          </div>
           <h4 className='position-name'>{position}</h4>
+          <div className='posted-at-contract-location'>
+            <p>{postedAt}</p>
+            <p>{contract}</p>
+            <p>{location}</p>
+          </div>
         </div>
       </div>
 

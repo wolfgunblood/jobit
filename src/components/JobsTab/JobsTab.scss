@@ -3,17 +3,86 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80vw;
+    width: 70vw;
     // overflow: hidden;
 
     // background-color: hsl(180, 31%, 95%);
     background-color: #fff;
-    
+
+    cursor: pointer;
+
 
     .company-info-container {
         display: flex;
         gap: 10px;
-       
+
+        // align-items: center;
+        .job-detail-container {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .company-name-btn-container {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: hsl(180, 29%, 50%);
+                }
+
+                .btn{
+
+                    border: none;
+                    outline: none;
+                    color: #fff;
+                    font-size: 12px;
+                    border-radius: 50px;
+                    padding: 0.2rem 0.5rem;
+                    cursor: pointer;
+                }
+
+                .btn-new{
+                    background-color: hsl(180, 29%, 50%);
+                }
+                .btn-featured{
+                    background-color: #333333;
+                }
+
+            }
+
+            .position-name {
+                margin: 0;
+                font-weight: 700;
+                font-size: 18px;
+
+                transition: 0.3s ease-in-out all;
+
+                &:hover {
+                    color: hsl(180, 29%, 50%);
+
+                }
+
+            }
+
+            .posted-at-contract-location {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    margin: 0;
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
+        }
 
         .company-logo-container {
             // height: 100%; Important lesson takaing 100% of svg not parent conatiner
@@ -22,8 +91,8 @@
             justify-content: center;
 
             .company-logo {
-                width: 50px;
-                height: 50px;
+                width: 70px;
+                height: 70px;
             }
         }
     }
@@ -42,7 +111,7 @@
             border: none;
             outline: none;
             // lesson 2.5% 1rem all have different effect percentage pushes it out of container
-            padding: 0.8rem; 
+            padding: 0.8rem;
             color: hsl(180, 29%, 50%);
             background-color: hsl(180, 52%, 96%);
 
@@ -51,6 +120,7 @@
 
             border-radius: 7px;
             transition: 0.3s ease-in-out all;
+            cursor: pointer;
 
             &:hover {
                 color: hsl(180, 52%, 96%);
