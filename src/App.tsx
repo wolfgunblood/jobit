@@ -1,8 +1,11 @@
 import React from 'react'
+import JobsTab from './components/JobsTab/JobsTab'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className='App'>
+      <JobsTab />
+    </div>
   )
 }
 
