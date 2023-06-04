@@ -21,6 +21,29 @@ body {
   place-items: center;
   min-width: 320px; */
   min-height: 100vh;
+  overflow-x: hidden;
 }
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ccc;
+  /* margin-top: 8px; */
+  /* margin-bottom: 8px; */
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f3f;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d1d1f
+}
+
 
 
