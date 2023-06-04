@@ -1,6 +1,6 @@
 import React from 'react';
 import "./App.css";
-import Header from "../src/assets/images/bg-header-desktop.svg";
+import Header from "../images/bg-header-desktop.svg";
 import JobsContainer from './components/JobsContainer/JobsContainer';
 
 const App = () => {
