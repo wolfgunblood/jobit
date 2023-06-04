@@ -1,10 +1,11 @@
-import React from 'react'
-import JobsTab from './components/JobsTab/JobsTab'
+import React from 'react';
+import "./App.css";
+import Header from "../src/assets/images/bg-header-desktop.svg";
 
 const App = () => {
   return (
     <div className='App'>
-      <JobsTab />
+      <img src={Header} alt="header" className='headerImage' />
     </div>
   )
 }
