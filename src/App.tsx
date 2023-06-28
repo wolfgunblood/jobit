@@ -1,4 +1,3 @@
-import React from 'react';
 import "./App.css";
 import Header from "../images/bg-header-desktop.svg";
 import JobsContainer from './components/JobsContainer/JobsContainer';

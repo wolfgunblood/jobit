@@ -1,4 +1,3 @@
-import React from 'react';
 import "./JobsContainer.scss";
 import data from "../../data/data.json";
 import JobsTab from '../JobsTab/JobsTab';

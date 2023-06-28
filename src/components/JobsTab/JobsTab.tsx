@@ -1,7 +1,8 @@
-import React from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import './JobsTab.scss';
 
-const JobsTab = ({ item, index }) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const JobsTab = ({ item } :any) => {
 
   const { logo, company, contract, tools, languages, role, position, level, featured, postedAt, location } = item;
   // console.log(logo)
@@ -31,10 +32,11 @@ const JobsTab = ({ item, index }) => {
       <div className='btns-container'>
         <button className='btn'>{role}</button>
         <button className='btn'>{level}</button>
-        {tools.map((tool, index) => (
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-explicit-any
+        {tools.map((tool :any, index : number) => (
           <button key={index} className='btn'>{tool}</button>
         ))}
-        {languages.map((language, index) => (
+        {languages.map((language : any, index : number ) => (
           <button key={index} className='btn'>{language}</button>
         ))}
       </div>
