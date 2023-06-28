@@ -32,7 +32,6 @@ const JobsTab = ({ item } :any) => {
       <div className='btns-container'>
         <button className='btn'>{role}</button>
         <button className='btn'>{level}</button>
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-explicit-any
         {tools.map((tool :any, index : number) => (
           <button key={index} className='btn'>{tool}</button>
         ))}
