@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/wolfgunblood/jobit)
-- Live Site URL: [Add live site URL here](https://wolfgunblood.github.io/jobit/)
+- Solution URL: [Solution Repository](https://github.com/wolfgunblood/jobit)
+- Live Site URL: [Live Demo](https://wolfgunblood.github.io/jobit/)
 
 ## My process
 
