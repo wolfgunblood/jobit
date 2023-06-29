@@ -28,7 +28,7 @@ const JobsTab = ({ item } :any) => {
           </div>
         </div>
       </div>
-
+    <div className='hz-line'></div>
       <div className='btns-container'>
         <button className='btn'>{role}</button>
         <button className='btn'>{level}</button>
