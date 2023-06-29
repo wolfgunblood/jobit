@@ -1,14 +1,14 @@
 import "./JobsContainer.scss";
-import data from "../../data/data.json";
+import datajob from "../../data/datajob"
 import JobsTab from '../JobsTab/JobsTab';
 
 const JobsContainer = () => {
 
-    console.log(data);
+    console.log(datajob);
 
   return (
     <div className='jobs-container'>
-        {data.map((item, index) => (
+        {datajob.map((item, index) => (
             <JobsTab key={index} item={item} index={index}/>
         ))}
     </div>
